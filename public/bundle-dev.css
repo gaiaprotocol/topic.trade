@@ -670,4 +670,8 @@ li.chat-message-list-item > main {
     padding: 24px !important;
   }
 }
+.topictrade-logo {
+  display: flex;
+  align-items: center;
+}
 

@@ -1,8 +1,9 @@
-import { SPAInitializer } from "@common-module/app";
+import { BodyNode, SPAInitializer } from "@common-module/app";
 import { AppCompConfig } from "@common-module/app-components";
 import { MaterialLoadingSpinner } from "@common-module/material-loading-spinner";
 import { UniversalWalletConnector } from "@common-module/wallet";
 import AppConfig, { IAppConfig } from "./AppConfig.js";
+import TopicTradeLogo from "./components/TopicTradeLogo.js";
 
 export default async function init(config: IAppConfig) {
   AppConfig.init(config);
@@ -25,4 +26,6 @@ export default async function init(config: IAppConfig) {
       },
     },
   });
+
+  new TopicTradeLogo().appendTo(BodyNode);
 }
