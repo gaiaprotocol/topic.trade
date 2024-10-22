@@ -277,7 +277,12 @@ button > .icon-container {
   width: 36px;
   height: 36px;
 }
-button > .icon-container > img.icon {
+button > .icon-container > .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+button > .icon-container > .icon > svg {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -673,5 +678,8 @@ li.chat-message-list-item > main {
 .topictrade-logo {
   display: flex;
   align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
