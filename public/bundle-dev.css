@@ -609,6 +609,40 @@ li.chat-message-list-item > main {
 .chat-message-edit-form > form > .actions > button > .icon-container > .icon {
   font-size: 20px;
 }
+.logged-in-user-avatar-button > button.circle {
+  min-height: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: none;
+}
+@media (pointer: fine) {
+  .logged-in-user-avatar-button > button.circle:hover {
+    background-color: var(--circle-button-bg-color);
+  }
+}
+.logged-in-user-avatar-button > button.circle:active {
+  background-color: var(--circle-button-bg-color);
+}
+.logged-in-user-avatar-menu > header {
+  margin-bottom: 8px;
+}
+.logged-in-user-avatar-menu > header > .user-info {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.logged-in-user-avatar-menu > header > .user-info:hover {
+  opacity: 0.8;
+}
+/* Wallet Components */
+.wallet-avatar {
+  display: flex;
+  align-items: center;
+}
 .wallet-connection-content {
   display: flex;
   flex-direction: column;
@@ -675,6 +709,7 @@ li.chat-message-list-item > main {
     padding: 24px !important;
   }
 }
+/* Gaia Components */
 .topictrade-logo {
   display: flex;
   align-items: center;
